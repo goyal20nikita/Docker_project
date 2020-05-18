@@ -5,55 +5,55 @@ I want to thank Vimal sir and Preeti chandak mam for providing such expertise tr
 # PROJECT
 
 I created an image that has jenkins installed using dockerfile.
-*REQUIREMENTS:
+* REQUIREMENTS:
   docker
   centos latest image
   docker-compose
 
 
 
-*TO BUILD THE IMAGE :-
+* TO BUILD THE IMAGE :-
  docker built -t <image_name:version>
 
-*TO RUN CONTAINER 
+* TO RUN CONTAINER 
  docker run -dit  -P  --name jenkins_image  <image_name :version>
 
-*TO CHECK IP ADDRESS OF IMAGE
+* TO CHECK IP ADDRESS OF IMAGE
  docker inspect jenkins_image
 
-*JENKINS WILL BE LAUNCH IN RHEL8(local-server)
+* JENKINS WILL BE LAUNCH IN RHEL8(local-server)
  <ipaddress_of_image> :8080
 
 
-*JENKINS WILL BE LAUNCH IN WINDOWS(base-os)
+* JENKINS WILL BE LAUNCH IN WINDOWS(base-os)
  docker ps
  ##32768->8080
  <ipaddress_of_rhel> :32768
 
-*TO GO INSIDE THE CONTAINER
+* TO GO INSIDE THE CONTAINER
  docker exec -it jenkins_image bash
 
-#BY USING DOCKER-COMPOSE
-  *docker-compose up 
-  *docker ps 
-  *docker-compose ps
-  *docker-compose up -d(launch in background)
+# BY USING DOCKER-COMPOSE
+  * docker-compose up 
+  * docker ps 
+  * docker-compose ps
+  * docker-compose up -d(launch in background)
 
-#WHEN WE LAUNCH THE IMAGE IT WILL AUTOMATICALLY START THE SERVICE.
+# WHEN WE LAUNCH THE IMAGE IT WILL AUTOMATICALLY START THE SERVICE.
 
 IF IN CASE FAIL:
 RUN SOME BASIC COMMAND
- *systemctl stop firewalld
- *getenforce
- *setenforce 0
- *systemctl restart docker
- *docker ps
- *docker images
+ * systemctl stop firewalld
+ * getenforce
+ * setenforce 0
+ * systemctl restart docker
+ * docker ps
+ * docker images
 
 
 
-#THANKYOU
-#NIKITA GOYAL
-#IIEC RISE 2020.8.5.4
+# THANKYOU
+# NIKITA GOYAL
+# IIEC RISE 2020.8.5.4
 
 
