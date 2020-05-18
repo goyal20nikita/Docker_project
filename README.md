@@ -32,6 +32,12 @@ docker ps
 TO GO INSIDE THE CONTAINER
 docker exec -it jenkins_image bash
 
+BY USING DOCKER-COMPOSE
+docker-compose up 
+docker ps 
+docker-compose ps
+docker-compose up -d(launch in background)
+
 WHEN WE LAUNCH THE IMAGE IT WILL AUTOMATICALLY START THE SERVICE.
 
 IF INCASE FAIL:
