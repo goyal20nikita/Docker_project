@@ -1,0 +1,9 @@
+version : '2'
+
+services:
+  jenkinsimage:
+      image: rise:v1
+      restart: on-failure
+      
+
+        
