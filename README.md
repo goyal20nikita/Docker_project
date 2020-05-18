@@ -29,6 +29,9 @@ docker ps
 ##32768->8080
 <ipaddress_of_rhel> :32768
 
+TO GO INSIDE THE CONTAINER
+docker exec -it jenkins_image bash
+
 WHEN WE LAUNCH THE IMAGE IT WILL AUTOMATICALLY START THE SERVICE.
 
 IF INCASE FAIL:
